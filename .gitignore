@@ -2,3 +2,4 @@
 .idea/
 *.gem
 .ruby-version
+tmp/
