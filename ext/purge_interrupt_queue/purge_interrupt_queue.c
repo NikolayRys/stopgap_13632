@@ -1,3 +1,4 @@
+#ifdef BROKEN_RUBY
 #include "ruby.h"
 #include "ruby/config.h"
 
@@ -23,7 +24,6 @@ typedef HANDLE rb_nativethread_id_t;
 typedef pthread_t rb_nativethread_id_t;
 #endif
 
-#ifdef BROKEN_RUBY
 typedef struct half_thread {
     void *vmlt_node1;
     void *vmlt_node2;
@@ -74,10 +74,7 @@ typedef struct half_thread {
     void *pending_interrupt_mask_stack;
     int pending_interrupt_queue_checked;
 } rb_half_thread_t;
-#endif
 
-
-#ifdef BROKEN_RUBY
 VALUE
 rb_thread_purge_queue(VALUE thread)
 {
@@ -86,11 +83,10 @@ rb_thread_purge_queue(VALUE thread)
     rb_ary_clear(th->pending_interrupt_queue);
     return Qnil;
 }
-#endif
 
-void Init_stopgap_13632()
+void Init_purge_interrupt_queue()
 {
-#ifdef BROKEN_RUBY
   rb_define_method(rb_cThread, "purge_interrupt_queue", rb_thread_purge_queue, 0);
-#endif
+
 }
+#endif
