@@ -12,5 +12,6 @@ Gem::Specification.new do |s|
   s.files = `git ls-files`.split($/)
   s.homepage = 'https://github.com/NickolasVashchenko/stopgap_13632'
   s.license = 'MIT'
-  s.required_ruby_version = %w(2.2.7 2.3.4 2.4.1)
+  s.platform = 'ruby' # Installable only for MRI
+  s.required_ruby_version = Gem::Requirement.new('>= 1.9.3')
 end
