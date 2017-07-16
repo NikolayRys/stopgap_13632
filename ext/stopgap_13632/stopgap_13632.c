@@ -84,7 +84,7 @@ rb_thread_purge_queue(VALUE thread)
     return Qnil;
 }
 
-void Init_purge_interrupt_queue()
+void Init_stopgap_13632()
 {
   rb_define_method(rb_cThread, "purge_interrupt_queue", rb_thread_purge_queue, 0);
 
