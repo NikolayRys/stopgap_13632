@@ -70,7 +70,7 @@ typedef struct half_thread {
     void *thgroup;
     void *value;
     void *errinfo;
-    void *pending_interrupt_queue;
+    VALUE pending_interrupt_queue;
     void *pending_interrupt_mask_stack;
     int pending_interrupt_queue_checked;
 } rb_half_thread_t;
