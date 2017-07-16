@@ -88,7 +88,7 @@ rb_thread_purge_queue(VALUE thread)
 }
 #endif
 
-void Init_puma_http11()
+void Init_stopgap_13632()
 {
 #ifdef BROKEN_RUBY
   rb_define_method(rb_cThread, "purge_interrupt_queue", rb_thread_purge_queue, 0);
