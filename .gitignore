@@ -3,3 +3,4 @@
 *.gem
 .ruby-version
 tmp/
+Gemfile.lock
