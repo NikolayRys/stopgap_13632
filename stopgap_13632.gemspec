@@ -12,4 +12,5 @@ Gem::Specification.new do |s|
   s.platform = 'ruby' # Installable only for MRI
   s.required_ruby_version = Gem::Requirement.new('>= 1.9.3')
   s.add_development_dependency 'rake-compiler'
+  s.add_development_dependency 'minitest'
 end
