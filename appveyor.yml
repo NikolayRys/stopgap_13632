@@ -3,20 +3,24 @@ branches:
     - master
 
 environment:
-  RUBY_VERSION: 24-x64
-  PATH: c:\Ruby%RUBY_VERSION%\DevKit\mingw\bin;C:\Ruby%RUBY_VERSION%\bin;C:\Ruby%RUBY_VERSION%\DevKit\bin;C:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1;%PATH%
+  matrix:
+    - RUBY_VERSION: 24-x64
+      DEVKIT: C:\Ruby24-x64\DevKit
+    - RUBY_VERSION: 24
+      DEVKIT: C:\Ruby24\DevKit
 
 install:
   - set PATH=C:\Ruby%RUBY_VERSION%\bin;%PATH%
-  - C:\Ruby21\DevKit\devkitvars.bat
+  - "%DEVKIT%\\devkitvars.bat"
   - bundle install
   - bundle exec rake compile
 
+build: off
+
+before_test:
+  - ruby -v
+  - gem -v
+  - bundle -v
+
 test_script:
   - bundle exec rake test
-
-platform:
-  - x86
-  - x64
-
-build: off
