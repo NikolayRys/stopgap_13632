@@ -8,6 +8,7 @@ environment:
 
 install:
   - set PATH=C:\Ruby%RUBY_VERSION%\bin;%PATH%
+  - C:\Ruby%RUBY_VERSION%\DevKit\devkitvars.bat
   - bundle install
   - bundle exec rake compile
 
