@@ -24,4 +24,4 @@ rake test
 
 ## CI
 [![Build Status](https://secure.travis-ci.org/NickolasVashchenko/stopgap_13632.svg)](http://travis-ci.org/NickolasVashchenko/stopgap_13632)
-[![Build Status](https://ci.appveyor.com/api/projects/status/kcq9mtw5hetf1uer?svg=true)](https://ci.appveyor.com/api/projects/status/kcq9mtw5hetf1uer?svg=true)
+[![Build Status](https://ci.appveyor.com/api/projects/status/cqgu4tce6of44c9x?svg=true)](https://ci.appveyor.com/api/projects/status/cqgu4tce6of44c9x?svg=true)
