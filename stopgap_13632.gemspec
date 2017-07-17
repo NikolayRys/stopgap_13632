@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'stopgap_13632'
-  s.version = '0.0.1'
+  s.version = '1.0.0.beta'
   s.authors = ['Nikolay Vashchenko']
   s.description = 'Temporary stopgap workaround for MRI Ruby versions 2.2.7, 2.3.4, 2.4.1 for the bug https://bugs.ruby-lang.org/issues/13632 until it gets backported'
   s.summary = 'Temporary solution for https://bugs.ruby-lang.org/issues/13632'
