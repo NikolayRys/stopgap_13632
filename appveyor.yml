@@ -1,0 +1,21 @@
+branches:
+  only:
+    - master
+
+environment:
+  RUBY_VERSION: 24-x64
+  PATH: c:\Ruby%RUBY_VERSION%\DevKit\mingw\bin;C:\Ruby%RUBY_VERSION%\bin;C:\Ruby%RUBY_VERSION%\DevKit\bin;C:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1;%PATH%
+
+install:
+  - set PATH=C:\Ruby%RUBY_VERSION%\bin;%PATH%
+  - bundle install
+  - bundle exec rake compile
+
+test_script:
+  - bundle exec rake test
+
+platform:
+  - x86
+  - x64
+
+build: off
