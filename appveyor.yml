@@ -8,7 +8,7 @@ environment:
 
 install:
   - set PATH=C:\Ruby%RUBY_VERSION%\bin;%PATH%
-  - dir C:\Ruby%RUBY_VERSION%\DevKit
+  - C:\Ruby21\DevKit\devkitvars.bat
   - bundle install
   - bundle exec rake compile
 
