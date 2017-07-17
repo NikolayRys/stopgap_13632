@@ -1,23 +1,21 @@
-environment:
-  matrix:
-    - RUBY_VERSION: 24-x64
-      PATH: PATH=C:\Ruby%RUBY_VERSION%\bin;c:\Ruby%RUBY_VERSION%\DevKit\mingw\bin;C:\Ruby%RUBY_VERSION%\bin;C:\Ruby%RUBY_VERSION%\DevKit\bin;C:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1;%PATH%
-    - RUBY_VERSION: 24
-      PATH: PATH=C:\Ruby%RUBY_VERSION%\bin;c:\Ruby%RUBY_VERSION%\DevKit\mingw\bin;C:\Ruby%RUBY_VERSION%\bin;C:\Ruby%RUBY_VERSION%\DevKit\bin;C:\MinGW;%PATH%
-
 install:
+  - SET PATH=C:\Ruby%ruby_version%\bin;%PATH%
+  - SET PATH=C:\MinGW\bin;%PATH%
+  - SET RAKEOPT=-rdevkit
+  - ruby --version
+  - gem --version
   - bundle install
   - bundle exec rake compile
 
-before_test:
-  - ruby -v
-  - gem -v
-  - bundle -v
+build: off
 
 test_script:
   - bundle exec rake test
 
-build: off
+environment:
+  matrix:
+    - ruby_version: "23"
+    - ruby_version: "23-x64"
 
 branches:
   only:
