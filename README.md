@@ -22,3 +22,5 @@ rake compile
 rake test
 ```
 
+## CI
+[![Build Status](https://secure.travis-ci.org/NickolasVashchenko/stopgap_13632.svg)](http://travis-ci.org/NickolasVashchenko/stopgap_13632)
