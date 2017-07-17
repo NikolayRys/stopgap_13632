@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.homepage = 'https://github.com/NickolasVashchenko/stopgap_13632'
   s.license = 'MIT'
   s.platform = 'ruby' # Installable only for MRI
-  s.required_ruby_version = Gem::Requirement.new('>= 1.9.3')
-  s.add_development_dependency 'rake-compiler'
-  s.add_development_dependency 'minitest'
+  s.required_ruby_version = '>= 1.9.3', '<= 2.4.1'
+  s.add_development_dependency 'rake-compiler', '~> 1.0'
+  s.add_development_dependency 'minitest', '~> 5.8'
 end
