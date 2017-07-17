@@ -2,7 +2,6 @@ dist: trusty
 sudo: false
 language: ruby
 cache: bundler
-before_install: bundle exec rake compile
 script: bundle exec rake test
 branches:
   only: [master]
