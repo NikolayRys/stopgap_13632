@@ -4,7 +4,7 @@
 ## Description
 A gem with a temporary stopgap workaround for MRI Ruby versions 2.2.7, 2.3.4, 2.4.1 for the bug https://bugs.ruby-lang.org/issues/13632 until the proper fix gets backported.
 No other version besides mentioned 3 are affected.
-The metioned versions are currently most recent ones.
+The mentioned versions are currently most recent ones.
 
 ## Installation
 ```ruby
