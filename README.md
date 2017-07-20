@@ -16,11 +16,16 @@ test2.rb:9:in `sysopen': stream closed in another thread (IOError)
 
 ## Installation
 ```ruby
-gem install stopgap_13632
-require 'stopgap_13632'
+if %w(2.2.7 2.3.4 2.4.1).include? RUBY_VERSION
+  gem "stopgap_13632", "~> 1.0", :platforms => ["mri", "mingw", "x64_mingw"]
+end
+
 ```
 
 ## Usage
+```
+require 'stopgap_13632'
+```
 And when an "IOError: stream closed" happens in a thread, accessing a busy IO:
 ```
 rescue IOError
