@@ -26,7 +26,7 @@ Don't forget to require it:
 ```
 require 'stopgap_13632'
 ```
-And when an "IOError: stream closed" happens in a thread, accessing a busy IO:
+And when an "IOError: stream closed" happens in a thread, accessing a busy IO, catch it and call the following method:
 ```
 rescue IOError
   Thread.current.purge_interrupt_queue
