@@ -6,6 +6,14 @@ A gem with a temporary stopgap workaround for MRI Ruby versions 2.2.7, 2.3.4, 2.
 No other version besides mentioned 3 are affected.
 The mentioned versions are currently most recent ones.
 
+## How does this bug look?
+You're getting similar exception erratically and in places where it should not happen:
+```ruby
+Traceback (most recent call last):
+    1: from test2.rb:9:in `block (2 levels) in <main>'
+test2.rb:9:in `sysopen': stream closed in another thread (IOError)
+```
+
 ## Installation
 ```ruby
 gem install stopgap_13632
