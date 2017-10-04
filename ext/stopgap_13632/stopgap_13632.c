@@ -43,7 +43,7 @@ typedef struct half_thread {
     void *top_self;
     void *top_wrapper;
     #ifndef VERSION_2_4_1
-        void *base_block;
+    void *base_block;
     #endif
     void *root_lep;
     void *root_svar;
@@ -58,10 +58,7 @@ typedef struct half_thread {
     void *interrupt_event;
 #elif defined(HAVE_PTHREAD_H)
     void *ubf_list1_or_signal_thread_list;
-#ifdef VERSION_2_3_4
-    void *ubf_list2;
-#endif
-#ifdef VERSION_2_4_1
+#if defined(VERSION_2_3_4) && defined(VERSION_2_4_1)
     void *ubf_list2;
 #endif
     pthread_cond_t cond;
