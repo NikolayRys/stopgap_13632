@@ -58,7 +58,7 @@ typedef struct half_thread {
     void *interrupt_event;
 #elif defined(HAVE_PTHREAD_H)
     void *ubf_list1_or_signal_thread_list;
-#if defined(VERSION_2_3_4) && defined(VERSION_2_4_1)
+#if defined(VERSION_2_3_4) || defined(VERSION_2_4_1)
     void *ubf_list2;
 #endif
     pthread_cond_t cond;
