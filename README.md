@@ -1,13 +1,13 @@
 [![Build Status](https://secure.travis-ci.org/NickolasVashchenko/stopgap_13632.svg)](http://travis-ci.org/NickolasVashchenko/stopgap_13632)
 [![Build Status](https://ci.appveyor.com/api/projects/status/cqgu4tce6of44c9x?svg=true)](https://ci.appveyor.com/api/projects/status/cqgu4tce6of44c9x?svg=true)
 
-## Disclaimer
-As on 24.10.2017 the bug has been fixed in 2.3.5, 2.4.2 and in trunk. Please, update your interpreter.
-
 ## Description
 A gem with a temporary stopgap workaround for MRI Ruby for the bug https://bugs.ruby-lang.org/issues/13632 until the proper fix gets backported.
 There are 4 versions affected 2.2.7, 2.2.8, 2.3.4, 2.4.1.
 
+## Disclaimer
+As on 24.10.2017 this bug has been fixed in 2.3.5, 2.4.2 and in the MRI trunk.
+Please, update your interpreter.
 
 ## How does this bug look?
 You're getting a similar exception erratically in a presence of many threads:
