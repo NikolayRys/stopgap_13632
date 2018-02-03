@@ -2,15 +2,16 @@
 Appveyor does not support 2.4.1 anymore:
 [![Build Status](https://ci.appveyor.com/api/projects/status/cqgu4tce6of44c9x?svg=true)](https://ci.appveyor.com/api/projects/status/cqgu4tce6of44c9x?svg=true)
 
+## Disclaimer
+As on 24.10.2017 this bug has been fixed in 2.3.5, 2.4.2 and 2.5.x
+The best way to fix this bug is to update your interpreter.
+*Also, this gem is not fit for ARM processor architecture.*
+
 ## Description
 A gem with a temporary stopgap workaround for MRI Ruby for the bug https://bugs.ruby-lang.org/issues/13632 until the proper fix gets backported.
-There are 4 versions affected 2.2.7, 2.2.8, 2.3.4, 2.4.1.
+There are 4 versions affected 2.2.7, 2.2.8, 2.2.9, 2.3.4, 2.4.1.
 
-## Disclaimer
-As on 24.10.2017 this bug has been fixed in 2.3.5, 2.4.2 and in the MRI trunk.
-Please, update your interpreter.
-
-## How does this bug look?
+## What does this bug look like?
 You're getting a similar exception erratically in a presence of many threads:
 ```ruby
 Traceback (most recent call last):
@@ -21,7 +22,7 @@ test2.rb:9:in `sysopen': stream closed in another thread (IOError)
 ## Installation and usage
 In Gemfile:
 ```ruby
-if %w(2.2.7 2.2.8 2.3.4 2.4.1).include? RUBY_VERSION
+if %w(2.2.7 2.2.8 2.2.9 2.3.4 2.4.1).include? RUBY_VERSION
   gem "stopgap_13632", "~> 1.0", :platforms => ["mri", "mingw", "x64_mingw"]
 end
 
@@ -37,6 +38,9 @@ rescue IOError
 end
 ```
 It will unblock the thread and allow it to proceed.
+
+## Change log
+1.1.2: Added ruby 2.2.9 support
 
 ## Contributing
 ```bash
