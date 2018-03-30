@@ -9,7 +9,7 @@ The best way to fix this bug is to update your interpreter.
 
 ## Description
 A gem with a temporary stopgap workaround for MRI Ruby for the bug https://bugs.ruby-lang.org/issues/13632 until the proper fix gets backported.
-There are 4 versions affected 2.2.7, 2.2.8, 2.2.9, 2.3.4, 2.4.1.
+There are 6 versions affected 2.2.7, 2.2.8, 2.2.9, 2.2.10, 2.3.4, 2.4.1.
 
 ## What does this bug look like?
 You're getting a similar exception erratically in a presence of many threads:
@@ -22,7 +22,7 @@ test2.rb:9:in `sysopen': stream closed in another thread (IOError)
 ## Installation and usage
 In Gemfile:
 ```ruby
-if %w(2.2.7 2.2.8 2.2.9 2.3.4 2.4.1).include? RUBY_VERSION
+if %w(2.2.7 2.2.8 2.2.9 2.2.10 2.3.4 2.4.1).include? RUBY_VERSION
   gem "stopgap_13632", "~> 1.0", :platforms => ["mri", "mingw", "x64_mingw"]
 end
 
