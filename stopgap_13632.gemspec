@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
   s.name = 'stopgap_13632'
   s.version = '1.1.2'
   s.authors = ['Nikolay Vashchenko']
-  s.description = 'Temporary stopgap workaround for MRI Ruby versions 2.2.7, 2.2.8, 2.3.4, 2.4.1 for the bug https://bugs.ruby-lang.org/issues/13632 until it gets backported'
+  s.description = 'Temporary stopgap workaround for MRI Ruby versions 2.2.7, 2.2.8, 2.2.9, 2.2.10, 2.3.4, 2.4.1 for the bug https://bugs.ruby-lang.org/issues/13632 until it gets backported'
   s.summary = 'Temporary solution for https://bugs.ruby-lang.org/issues/13632'
   s.email = 'sir.nickolas@gmail.com'
   s.extensions = ['ext/stopgap_13632/extconf.rb']
