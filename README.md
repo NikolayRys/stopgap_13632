@@ -41,6 +41,7 @@ It will unblock the thread and allow it to proceed.
 
 ## Change log
 1.1.2: Added ruby 2.2.9 support
+1.2.0: Added ruby 2.2.10 support
 
 ## Contributing
 ```bash
