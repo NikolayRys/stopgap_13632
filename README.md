@@ -1,6 +1,6 @@
 ![Stopgap logo](logo.png)
 
-## Disclaimer
+## ⚠️ Disclaimer ⚠️
 **The best way to fix this bug is to update your interpreter.**
 As on 24.10.2017 this bug has been fixed in 2.3.5, 2.4.2, 2.5.0 and all newer versions.
 Also, this gem is not fit for ARM processor architecture.
