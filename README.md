@@ -1,7 +1,3 @@
-[![Build Status](https://secure.travis-ci.org/NickolasVashchenko/stopgap_13632.svg)](http://travis-ci.org/NickolasVashchenko/stopgap_13632)
-Appveyor does not support 2.4.1 anymore:
-[![Build Status](https://ci.appveyor.com/api/projects/status/cqgu4tce6of44c9x?svg=true)](https://ci.appveyor.com/api/projects/status/cqgu4tce6of44c9x?svg=true)
-
 ## Disclaimer
 As on 24.10.2017 this bug has been fixed in 2.3.5, 2.4.2 and 2.5.x
 The best way to fix this bug is to update your interpreter.
@@ -48,3 +44,6 @@ It will unblock the thread and allow it to proceed.
 rake compile
 rake test
 ```
+[![Build Status](https://secure.travis-ci.org/NickolasVashchenko/stopgap_13632.svg)](http://travis-ci.org/NickolasVashchenko/stopgap_13632)
+Appveyor does not support 2.4.1 anymore:
+[![Build Status](https://ci.appveyor.com/api/projects/status/cqgu4tce6of44c9x?svg=true)](https://ci.appveyor.com/api/projects/status/cqgu4tce6of44c9x?svg=true)
