@@ -1,3 +1,5 @@
+![Stopgap logo](logo.png)
+
 ## Disclaimer
 As on 24.10.2017 this bug has been fixed in 2.3.5, 2.4.2 and 2.5.x
 The best way to fix this bug is to update your interpreter.
