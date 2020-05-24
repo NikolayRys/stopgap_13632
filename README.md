@@ -1,9 +1,9 @@
 ![Stopgap logo](logo.png)
 
 ## Disclaimer
-As on 24.10.2017 this bug has been fixed in 2.3.5, 2.4.2 and 2.5.x
-The best way to fix this bug is to update your interpreter.
-*Also, this gem is not fit for ARM processor architecture.*
+**The best way to fix this bug is to update your interpreter.**
+As on 24.10.2017 this bug has been fixed in 2.3.5, 2.4.2, 2.5.0 and all newer versions.
+Also, this gem is not fit for ARM processor architecture.
 
 ## Description
 A gem with a temporary stopgap workaround for MRI Ruby for the bug https://bugs.ruby-lang.org/issues/13632 until the proper fix gets backported.
